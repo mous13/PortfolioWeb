@@ -1,0 +1,14 @@
+body {
+    background: #ececec;
+    overflow: hidden;
+}
+.portLoad {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    line-height:1px;
+
+}
