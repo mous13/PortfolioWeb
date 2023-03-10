@@ -19,6 +19,7 @@ body {
     opacity:1;
 
 }
+
 /* .Hide & .Show are used to hide and show elements that I am working on
 because I use animations, I can't be assed to wait for them to finish.
  */
@@ -35,6 +36,12 @@ because I use animations, I can't be assed to wait for them to finish.
     opacity:0;
 
 }
+hr {
+    border-top: 1px solid #181818;
+}
+.navbar {
+    background-color:#ececec;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
 .portHeader {
 
     text-align:center;
@@ -43,6 +50,8 @@ because I use animations, I can't be assed to wait for them to finish.
 
 }
 .portContent {
+    position:absolute;
+    padding-top:10px;
 }
 .portContent_Intro {
     display:flex;
@@ -438,3 +447,6 @@ because I use animations, I can't be assed to wait for them to finish.
         opacity:1;
     }
 }
+
+
+
