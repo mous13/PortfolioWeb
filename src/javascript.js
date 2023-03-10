@@ -1,7 +1,14 @@
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 async function init() {
-await delay(2500);
-alert("test");
+    const portLoad = document.getElementById("portLoad");
+    const portContainer = document.getElementById("portContainer");
+    await delay(5000);
+    portLoad.classList.add("fadeout");
+    await delay(1000);
+    // portContainer.classList.add("fadein");
+
+
+
 }
 

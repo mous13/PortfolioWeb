@@ -2,7 +2,7 @@ body {
     background: #ececec;
     overflow: hidden;
 }
-.portLoad {
+#portLoad {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -10,5 +10,52 @@ body {
     transform: translate(-50%, -50%);
     text-align:center;
     line-height:1px;
+    opacity:1;
 
+}
+/* .Hide & .Show are used to hide and show elements that I am working on
+because I use animations, I can't be assed to wait for them to finish.
+ */
+.hide {
+    opacity:0!important;
+}
+.show {
+    opacity:1;
+}
+#portContainer {
+    opacity:0;
+    border:1px solid blue;
+}
+.portHeader {
+    border: 1px solid red;
+}
+.portContent {
+
+}
+.portContent_Intro {
+    position: absolute;
+    line-height: 1px;
+    display:flex;
+}
+.fadeout {
+    animation: fadeout 1s forwards;
+}
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+.fadein {
+    animation: fadein 1s forwards;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
 }
